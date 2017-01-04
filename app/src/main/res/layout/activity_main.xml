@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="looklook.lyb.com.myswipecaptcha.MainActivity">
+
+    <looklook.lyb.com.myswipecaptcha.View.SwipeCaptchaView
+        android:id="@+id/swipeCaptchanView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic11"
+        app:captchaWidth="30dp"
+        app:captchaHeight="30dp"
+
+        />
+
+    <SeekBar
+        android:id="@+id/dragBar"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:thumb="@drawable/thumb_bg"
+        android:background="?selectableItemBackground"
+        android:layout_below="@+id/swipeCaptchanView"
+        />
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="老板换码"
+        />
+</RelativeLayout>

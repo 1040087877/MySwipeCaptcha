@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeCaptchaView">
+        <attr name="captchaWidth" format="dimension"></attr>
+        <attr name="captchaHeight" format="dimension"></attr>
+        <attr name="matchDeviation" format="dimension"></attr>
+    </declare-styleable>
+</resources>
